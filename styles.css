@@ -1,0 +1,56 @@
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+    font-size: 20px;
+    vertical-align: middle;
+}
+/* ******NAVIGATION BAR******** */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-items ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 48px;
+    padding: 0px;
+}
+.nav-items ul li {
+  transition: transform 0.3s ease;
+}
+
+.nav-items ul li:hover {
+  transform: scale(0.95);
+}
+
+.nav-items ul a{
+    text-decoration: none;
+    color: rgb(137, 135, 161);
+    transition: color 0.3s ease, transform 0.3s ease;
+    animation: zoomIn 0.6s ease-out forwards;
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.nav-items ul a:hover{
+    color: black;
+    transform: scale(1.05);
+}
+
+/* ******BANNER PART******** */
