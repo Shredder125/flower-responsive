@@ -1,17 +1,27 @@
+.open-sans-font {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 .material-symbols-outlined {
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
     'GRAD' 0,
-    'opsz' 24
+    'opsz' 24;
     font-size: 20px;
     vertical-align: middle;
 }
+
 /* ******NAVIGATION BAR******** */
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    /* margin: 0 auto; */
 }
 .nav-items ul{
     display: flex;
@@ -52,5 +62,96 @@ nav{
     color: black;
     transform: scale(1.05);
 }
-
+.cart a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+}
 /* ******BANNER PART******** */
+.banner-mother{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px auto;
+    /* border: 3px solid green; */
+    width: 100%;
+    max-width: 1140px;
+    height: 461px;
+    box-sizing: border-box;
+    /* gap: 2rem; */
+}
+.banner-head{
+font-weight: 700;
+font-size: 65px;
+margin-top: 162px;
+margin-bottom: 13px;
+}
+.banner-span{
+    color: rgb(233, 90, 8);
+}
+.banner-p{
+    font-weight: 400;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 0;
+    margin-bottom: -20px;
+}
+.banner-image{
+   /* width: 100%; */
+    max-width: 570px;
+    max-height: 355px;
+    /* border: 3px solid red; */
+    margin-top: 6.6rem;
+    margin-left: 40px;
+    flex-shrink: 0;
+}
+.banner-image img{
+  max-width: 100%;
+  height: auto;
+  /* display: block; */
+}
+/* <!-- ********PLANTS SECTION******** --> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ******RESPONSIVE******** */
+@media (max-width: 570px) {
+  .mob-hide {
+    display: none;
+  }
+  .nav-mother{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 54px;
+  }
+
+  .banner-mother{
+    display: flex;
+    flex-direction: column-reverse;
+    /* max-width: 393.18px; */
+    height: auto;
+    /* margin-top: 15rem; */
+    /* text-align: center; */
+  }
+  .banner-head{
+    margin-top: 20px;
+    font-size: 40px;
+    margin-bottom: 13px;
+  }
+  .banner-child{
+    text-align: left;
+  }
+}
