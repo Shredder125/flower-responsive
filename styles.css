@@ -30,7 +30,10 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* margin: 0 auto; */
+}
+nav img {
+  max-width: 120px;
+  height: auto;
 }
 .nav-items ul{
     display: flex;
@@ -38,8 +41,9 @@ nav{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 48px;
     padding: 0px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 .nav-items ul li {
   transition: transform 0.3s ease;
@@ -84,12 +88,10 @@ nav{
     justify-content: space-between;
     align-items: center;
     margin: 60px auto;
-    /* border: 3px solid green; */
     width: 100%;
     max-width: 1140px;
     height: 461px;
     box-sizing: border-box;
-    /* gap: 2rem; */
 }
 .banner-head{
 font-weight: 700;
@@ -108,10 +110,8 @@ margin-bottom: 13px;
     margin-bottom: -20px;
 }
 .banner-image{
-   /* width: 100%; */
     max-width: 570px;
     max-height: 355px;
-    /* border: 3px solid red; */
     margin-top: 6.6rem;
     margin-left: 40px;
     flex-shrink: 0;
@@ -124,15 +124,12 @@ margin-bottom: 13px;
 /* <!-- ********PLANTS SECTION******** --> */
 .plant-main{
   max-width: 1140px;
-  /* height: 1186.88px; */
   margin: 0 auto;
-  /* border: 3px solid orangered; */
 }
 .plants-head{
   font-size: 50px;
   font-weight: 600;
   text-align: center;
-  /* margin-left: -10rem; */
   margin-top: 10rem;
   margin-bottom: 0px;
 }
@@ -155,7 +152,6 @@ margin-bottom: 13px;
 }
 .card{
   width: 100%;
-  /* border: 2px solid red; */
   text-align: center;
 }
 .card img {
@@ -198,7 +194,6 @@ margin-bottom: 13px;
   align-items: center;
   margin: 10rem auto;
   max-width: 1140px;
-  /* border: 3px solid greenyellow; */
 }
 .plantul{
   color: rgba(0, 0, 0, 0.5);
@@ -208,7 +203,6 @@ margin-bottom: 13px;
 }
 .lover-words{
   max-width: 33.75rem;
-  /* border: 3px solid yellow; */
 }
 .lover-head{
   font-size: 50px;
@@ -216,7 +210,6 @@ margin-bottom: 13px;
 }
 .lover-img{
    position: relative;
-   /* overflow: hidden; */
 }
 .base-image {
   width: 100%;
@@ -231,7 +224,91 @@ margin-bottom: 13px;
   width: 50%;
   filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.4));
 }
+/* ******LATEST DEALS**** */
+.latest-deals{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.flexdiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.flexdiv a{
+  text-decoration: none;
+  color: white;
+}
+.childdiv{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 366px;
+  flex: 1;
+}
+.large-img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  aspect-ratio: 6 / 3.38;
+}
+.small-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}
+.img-right{
+  flex: 2.1;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+.image-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-height: auto;
+  overflow: hidden;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
+.overlay-text {
+  position: absolute;
+  top: 50%;         
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  border-radius: 8px;
+}
+.overlay-text-two{
+  position: absolute;
+  top: 50%;         
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
 /* ******RESPONSIVE******** */
 @media (max-width: 576px) {
   .mob-hide {
@@ -239,9 +316,13 @@ margin-bottom: 13px;
   }
   .nav-mother{
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around;
     align-items: flex-end;
-    margin-top: 54px;
+    margin-top: 54px; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    flex-wrap: wrap;
   }
 
   .banner-mother{
@@ -280,5 +361,23 @@ margin-bottom: 13px;
 .plantul{
   margin-top: 15px;
 }
-
+ .flexdiv {
+    flex-direction: column;
+  }
+  .img-right,
+  .childdiv {
+    max-width: 100%;
+    /* flex: 1 1 100%; */
+    width: 100%;
+  }
+  .large-img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+  .overlay-text,
+  .overlay-text-two {
+    padding: 30px;
+    font-size: 18px;
+  }
 }
