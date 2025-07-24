@@ -207,6 +207,7 @@ margin-bottom: 13px;
 .lover-head{
   font-size: 50px;
   padding-left: 1.0rem;
+  margin-bottom: 30px;
 }
 .lover-img{
    position: relative;
@@ -249,7 +250,6 @@ margin-bottom: 13px;
 }
 .large-img {
   width: 100%;
-  /* height: 100%; */
   object-fit: fill;
   aspect-ratio: 6 / 3.38;
 }
@@ -286,6 +286,7 @@ margin-bottom: 13px;
   width: 100%;
   height: 100%;
   z-index: 1;
+  pointer-events: none;
 }
 .overlay-text {
   position: absolute;
@@ -439,9 +440,6 @@ margin-bottom: 13px;
   }
   .nav-mother{
     display: flex;
-    /* justify-content: space-around;
-    align-items: flex-end;
-    margin-top: 54px; */
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
@@ -490,7 +488,6 @@ margin-bottom: 13px;
   .img-right,
   .childdiv {
     max-width: 100%;
-    /* flex: 1 1 100%; */
     width: 100%;
   }
   .large-img {
