@@ -113,12 +113,62 @@ margin-bottom: 13px;
   /* display: block; */
 }
 /* <!-- ********PLANTS SECTION******** --> */
-
-
-
-
-
-
+.plant-main{
+  max-width: 1140px;
+  height: 1186.88px;
+}
+.plants-head{
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+  margin-left: -10rem;
+  margin-top: 10rem;
+  margin-bottom: 0px;
+}
+.plant-h3{
+  text-align: center;
+  margin-bottom: 49px;
+  margin-top: 13px;
+  font-size: 22px;
+  font-weight: 400;
+}
+.card-mother{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  column-gap: 0px;
+  row-gap: 50px;
+}
+.card{
+  width: 100%;
+  /* border: 2px solid red; */
+  text-align: center;
+  
+}
+.btn{
+  background-color: orangered;
+  width: 270px;
+  height: 50px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease
+}
+.btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 6px 20px rgba(255, 87, 34, 0.6);
+    }
+.btn:active {
+      transform: scale(0.98);
+      box-shadow: 0 3px 8px rgba(255, 87, 34, 0.5);
+    }
+.card-head{
+  margin-bottom: 0;
+}
+.card-second-head{
+    margin-top: 5px;
+}
 
 
 
@@ -154,4 +204,5 @@ margin-bottom: 13px;
   .banner-child{
     text-align: left;
   }
+  
 }
